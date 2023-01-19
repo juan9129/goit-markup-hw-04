@@ -124,6 +124,8 @@ header {
 /* seccion#1 "soluciones eficacez para su negocio */
 .effective-solutions {
   background-color: var(--background-color);
+  background-image: url(../images/background-image.jpg);
+  background-size: cover;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 900;
@@ -169,6 +171,14 @@ header {
   width: 270px;
   height: 122px;
 }
+.icon-section-2{
+  display: flex;
+  align-items: center;
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 /* section-titles */
 .section-titles {
   font-family: var(--main-font);
@@ -188,6 +198,25 @@ header {
   justify-content: space-around;
   padding: 0;
   margin: auto;
+}
+
+.section-3-img-footer{
+  position: relative;
+  bottom: 87.5px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 373px;
+  height: 70px;
+  justify-content: center;
+}
+.section-3-paragraph-img-footer{
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 /* section-4 */
 
@@ -212,6 +241,8 @@ header {
   line-height: 1;
   color: #757575;
   text-align: center;
+  margin-left: 40px;
+  margin-right: 49px;
 }
 .our-team-members-list-container {
   display: flex;
@@ -219,6 +250,92 @@ header {
   justify-content: space-around;
   padding: 0;
   margin: auto;
+}
+.our-team-list-container{
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px;
+height: 428px;
+}
+.social-media-icons-container{
+display:flex;
+justify-content: space-between;
+width: 206px;
+height: 44px;
+margin-top: 16px;
+margin-left: 32px;
+margin-right: 32px;
+margin-bottom: 30px;
+fill: #AFB1B8;
+}
+
+.our-team-members-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+}
+.our-team-members-icon-container:hover{
+  fill: #FFFFFF;
+  background-color: var(--background-button-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+}
+.svg-class-our-team-members{
+width: 20px;
+height: 20px;
+}
+/* section-regular-clients */
+.regular-clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.regular-clients-tittle{
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 36px;
+Line-height: 42.19px;
+letter-spacing: 3%;
+padding-top: 59px;
+padding-bottom: 44px;
+}
+.regular-clients-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-class-regular-clients{
+  display: flex;
+  margin: 1px;
+  border: 190px 81px;
+  border: solid;
+  border-color: #AFB1B8;
+  width: 170px;
+  height: 81px;
+  margin-left: 30px;
+  margin-bottom: 161px;
+  padding: 12px;
+  fill: #AFB1B8;
+}
+.svg-class-regular-clients:hover {
+  fill:var(--background-button-color) ;
+  display: flex;
+  margin: 1px;
+  border: 190px 81px;
+  border: solid;
+  border-color: var(--background-button-color);
+  width: 170px;
+  height: 81px;
+  margin-left: 30px;
+  margin-bottom: 161px;
+  padding: 12px;
 }
 /* portafolio-pagina2*/
 .briefcase-titles {
@@ -229,7 +346,7 @@ header {
   line-height: 2;
   color: #212121;
   margin-top: 0px;
-  margin-bottom: 0px;
+
 }
 
 .briefcase-proyects {
@@ -347,15 +464,18 @@ header {
   height: 252px;
   display: flex;
   flex-direction: row;
-  justify-items: flex-start;
+  justify-items: space-between;
   align-items: center;
 }
-
 .footer-list {
-  padding: 0%;
+  padding: 0px;
+  margin-right: 0px;
+  width: 231px;
+  height: 126px;
 }
 .footer-list-item {
   width: 231px;
+  
 }
 /* footer-elements */
 .footer-elements {
@@ -384,4 +504,27 @@ header {
 
 .footer-contact:hover {
   color: var(--brand-color);
+}
+.footer-tittle{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.footer-left-container{
+  align-items: flex-start;
+}
+.footer-right-container{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 206px;
+height: 80px;
 }
