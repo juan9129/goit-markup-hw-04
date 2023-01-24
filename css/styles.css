@@ -74,12 +74,14 @@ header {
   font-family: var(--main-font);
   font-style: normal;
   line-height: 1;
+  font-weight: 500;
 }
 .header-element:hover {
   color: var(--brand-color);
 }
 .header-element:active {
   color: var(--brand-color);
+  font-weight: 500;
 }
 /* header-contacts */
 .header-contact {
@@ -121,10 +123,25 @@ header {
 .info-item-list {
   padding: 0 15px;
 }
+
+.info-item-list-icon{
+width: 16px;
+align-items: center;
+cursor: pointer;
+}
+.info-item-list-icon:hover{
+  width: 16px;
+  align-items: center;
+  fill: var(--brand-color);
+  }
+.header-contact:hover .info-item-list-icon,
+.header-contact:focus .info-item-list-icon{
+  fill: var(--brand-color);
+}
 /* seccion#1 "soluciones eficacez para su negocio */
 .effective-solutions {
-  background-color: var(--background-color);
-  background-image: url(../images/background-image.jpg);
+  background-image: linear-gradient(to top,#2F303A66,
+  #2F303A66), url(../images/background-image.jpg);
   background-size: cover;
   font-family: var(--main-font);
   font-style: normal;
@@ -268,6 +285,7 @@ margin-left: 32px;
 margin-right: 32px;
 margin-bottom: 30px;
 fill: #AFB1B8;
+padding: 0px;
 }
 
 .our-team-members-icon-container{
@@ -346,7 +364,7 @@ padding-bottom: 44px;
   line-height: 2;
   color: #212121;
   margin-top: 0px;
-
+margin-bottom: 4px;
 }
 
 .briefcase-proyects {
@@ -356,11 +374,6 @@ padding-bottom: 44px;
   color: #757575;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.briefcase-proyects-new-orleans {
-  padding-right: 24px;
-  margin: 0;
 }
 
 /* buttons-section-filtros */
@@ -379,6 +392,7 @@ padding-bottom: 44px;
   padding: 10 32px;
   width: 261px;
   height: 50px;
+  border-radius: 4px;
 }
 
 .buttons-filters {
@@ -403,6 +417,8 @@ padding-bottom: 44px;
   line-height: 2;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 .filter-button-container {
   display: flex;
@@ -439,14 +455,7 @@ padding-bottom: 44px;
 }
 .filter-card-bottom {
   border: 1px solid #eeeeee;
-  padding-left: 24px;
-  padding-top: 20px;
-  width: 370px;
-  height: 110px;
-}
-.filter-card-bottom-new-orleans {
-  border: 1px solid #eeeeee;
-  padding-left: 24px;
+  padding: 20px 24px;
   width: 370px;
   height: 110px;
 }
